@@ -1,0 +1,25 @@
+//表示题目难度的类，取值可以是难、中、易
+package com.zhangxin.exam.entity;
+
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+@Data
+public class QuestionLevel {
+    @Id
+    @GeneratedValue
+    @JsonProperty("id")
+    private Integer questionLevelId;
+
+    @JsonProperty("name")
+    private String questionLevelName;
+
+    @JsonProperty("description")
+    private String questionLevelDescription;
+}
