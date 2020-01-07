@@ -9,8 +9,5 @@ public class RegisterDTO {
     private String password;
     private String password2;
     private String mobile;
-    /**
-     * 验证码
-     */
     private String captcha;
 }
